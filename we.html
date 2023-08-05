@@ -1,0 +1,275 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel=stylesheet href="we.css">
+<meta charset="UTF-8">
+    <div class="container">
+        
+    <header>
+        <nav id="navbar">
+            <img src="image-removebg-preview.png">
+            <div class="logo"><span>WeatherWizard</span></div>
+        </nav>
+    <div id="mobile">
+        <div class="logo1"><span>WeatherWizard</span></div>
+    </div>
+    
+<div class="overlay">
+    <section id="home">
+        <h1 class="cont">WELCOME  TO  WEATHERWIZARD</h1>
+        <br>
+        <h8>Forecast & Temperature Conversion : Weather at your fingertips.</h8><br>
+        <p>WeatherWizard is your all-in-one weather destination!<br> Get accurate and up-to-date weather forecasts for your location. Plan your day with our detailed weather predictions, and hourly updates. Plus, effortlessly convert temperatures between Celsius and Fahrenheit to suit your preferences. With WeatherWizard, you'll never be caught unprepared for any weather condition.</p>
+    </section>
+</div>
+    </header>
+     
+<body>
+<section>
+    <h2><span>CURRENT</span> <span>WEATHER</span> <span> AT </span> <span>A</span> <span>GLANCE</span></h2><br>
+    <h3> Simply enter the desired location and find real-time weather updates at your fingertips!</h3><br>
+  <div class="weather-container">
+    <input type="text" placeholder="Enter a location" id="search-bar">
+    <button id="search-btn">Search</button>
+     <div class="weather-box">
+      <h2 id="temperature"> </h2>
+      <p id="condition"></p>
+    </div>
+      <h4><span>SEAMLESS</span> <span> TEMPERATURE</span> <span> CONVERSION </span> </h4><br>
+           <h3>Enter Celsius, and watch it transform to Fahrenheit effortlessly in the blink of an eye!</h3>
+    </div>
+  <script src="script.js"></script>
+    <style>
+        
+    body {
+  margin: 0;
+  padding: 0;
+  background:url("https://jooinn.com/images/beautiful-blue-sky.jpg");
+        background-position: center;
+    background-size: cover;
+         
+        }
+        
+.weather-container {
+  
+  
+  align-items: center;
+  justify-content: center;
+  height: 98vh;
+    
+}
+
+.weather-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-right:40px;
+    margin-top: 15px;
+  padding: 20px;
+}
+
+#temperature {
+  font-size: 40px;
+  margin: 0;
+}
+
+#condition {
+  font-size: 40px;
+  margin: 0;
+}
+
+#location {
+  font-size: 30px;
+  margin: 0;
+}
+
+input[type="text"] {
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+    margin-left: 500px;
+  border: none;
+    font-size: 20px;
+    font-family: serif;
+    width: 220px;
+}
+
+button {
+  padding: 17px 30px;
+  border-radius: 5px;
+  margin-right: 100px;
+  border: none;
+    font-family: serif;
+    font-size: 20px;
+  background-color: #2980B9;
+  color: #FFFFFF;
+  cursor: pointer;
+}</style>
+</section>        
+<div class="wrapper">
+        <div class="container">
+            
+            <label for="celsius">Celsius</label>
+            <input type="number" id="celsius" oninput= "celToFar()">
+        </div>
+        <div class="container">
+            <label for="fahrenheit">Fahrenheit</label>
+            <input type="number" id="fahrenheit" oninput = "farToCel()">
+        </div>
+    <style>
+        
+.wrapper{
+    width: 450px;
+    background-color: #ffffff;
+    padding: 70px 40px;
+    position: absolute;
+    font-family: serif;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 150%;
+    box-shadow: 0 20px 25px rgba(0,0,0,0.25);
+    border-radius: 8px;
+    display: flex;
+     font-family: cursive;
+    font-size: 24px;
+    justify-content: space-between;
+}
+        
+input{
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #d2d2d2;
+    font-family: serif;
+    outline: none;
+    margin-top: 8px;
+    padding: 0 10px;
+}
+        
+input:focus{
+    border-color: #3164ff;
+}</style>
+    </div>
+    <script src="weather.js"></script>
+    
+</body>
+        
+    <div id="order">
+        <div class="title1">SUBSCRIBE FOR DAILY UPDATES</div>
+        <form action="">
+          <input type="email" class="in_box" placeholder="Name">
+          <input type="email" class="in_box" placeholder="Email">
+          <textarea type="text" class="in_box text_area" placeholder="Address"></textarea>
+<button class="btn2">Order Now</button>
+       <style>
+            #order {
+ background: url(https://advancelocal-adapter-image-uploads.s3.amazonaws.com/image.pennlive.com/home/penn-media/width2048/img/wildaboutpa/photo/summer-sunrisejpg-8a3de64ee9c00a6e.jpg);
+    background-position: center;
+    background-size: cover;
+    font-family: serif;
+    min-height: 80vh;
+  }
+  
+.title1{
+
+  position: relative;
+  color: black;
+  font-weight: bold;
+    font-size:30px;
+  letter-spacing: 4px;
+  overflow: hidden;
+              text-align: center;
+  padding-top: 26px;
+    padding-left: 380px;
+   
+   
+  white-space: nowrap;
+  animation: typewriter 65s steps(44) 1s 1 normal both,
+  
+    blinkTextCursor 500ms infinite;
+}
+           
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {width: 990px;
+  }
+}
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: hsl(0, 0%, 80%);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
+  form{
+    width: 450px;
+    background-color: white;
+
+    box-shadow: 0 0 20px 0 rgb(213, 212, 210);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+  }
+  .in_box{
+    width: 350px;
+      font-family: serif;
+    height: 37px;
+    /* margin-top: 20px; */
+    margin: 25px 45px 0 45px;
+   
+    padding: 0 10px;
+border-radius: 14px;
+    border:1px solid #777;
+    outline: none;
+  }
+  .text_area{
+    height: 160px;
+    padding-top: 10px;
+  }
+  .btn2{
+    border-radius: 20px;
+      font-family: serif;
+    margin: 20px 45px;
+    padding: 0 10px;
+    /* margin: auto; */
+    width: 30%;
+  }
+
+  textarea{
+    height: 150px;
+    padding-top: 10px;
+  }
+  .btn2{
+border-radius: 15px;
+color: #fff;
+margin-top: 18px;
+padding: 10px;
+
+  }
+  button{
+    background-color: 
+    color: white;
+    border: none;
+        cursor: pointer;
+  }
+  button:hover{
+    background-color: rgb(94, 158, 61);
+ }</style>
+        </form>
+         
+       
+    </div>
+    <footer>
+        <div>
+            &copy;Copyright 2023
+            <p>
+          Privacy Policy ~ FAQ 
+    </p>
+        </div>
+    </footer>
+</div>
